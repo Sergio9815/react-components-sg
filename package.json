@@ -1,7 +1,7 @@
 {
   "name": "react-components-sg",
   "private": false,
-  "version": "0.0.1",
+  "version": "1.0.0",
   "type": "module",
   "description": "Simple React components.",
   "main": "dist/react-components-sg.js",

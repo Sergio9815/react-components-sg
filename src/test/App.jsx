@@ -1,8 +1,8 @@
 // import { useState } from 'react'
-import reactLogo from "./assets/react.svg";
+import reactLogo from "../assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
-import { Button, PfTextField } from "./index";
+import { Button, TextFieldWithBtn, TextField } from "../index";
 
 function App() {
   return (
@@ -21,16 +21,25 @@ function App() {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          flexDirection: 'column',
-          gap: '10px'
+          flexDirection: "column",
+          gap: "10px",
         }}
       >
-        <Button handleClick={() => alert("hi")} label="TEST" showIcon={false} />
+        <Button
+          handleClick={() => alert("test")}
+          label="TEST"
+          showIcon={false}
+        />
 
-        <PfTextField 
+        <TextFieldWithBtn
           handleClick={(value) => alert(value)}
           placeholder="Write something..."
-         />
+        />
+
+        <TextField
+          handleClick={(value) => alert(value)}
+          placeholder="Write something..."
+        />
       </div>
     </>
   );
