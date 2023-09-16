@@ -2,7 +2,7 @@
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
-import { Button } from "./index";
+import { Button, PfTextField } from "./index";
 
 function App() {
   return (
@@ -21,9 +21,16 @@ function App() {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
+          flexDirection: 'column',
+          gap: '10px'
         }}
       >
         <Button handleClick={() => alert("hi")} label="TEST" showIcon={false} />
+
+        <PfTextField 
+          handleClick={(value) => alert(value)}
+          placeholder="Write something..."
+         />
       </div>
     </>
   );
