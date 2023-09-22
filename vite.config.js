@@ -12,5 +12,15 @@ export default defineConfig({
       // Otras opciones de Rollup, si es necesario
     },
   },
+  css: {
+    preprocessorOptions: {
+      sass: {
+        // Opciones de configuración de SASS aquí
+        additionalData: `
+          @import "@/styles/variables.scss";
+        `,
+      },
+    },
+  },
   plugins: [react()],
 })
